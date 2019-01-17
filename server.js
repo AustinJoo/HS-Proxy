@@ -21,7 +21,7 @@ app.use('/:listingID', express.static(path.join(__dirname, '/public')));
 // }));
 
 app.use('/api/pictures', proxy({
-    target: 'ec2-3-16-208-224.us-east-2.compute.amazonaws.com:5050'
+    target: 'ec2-3-16-208-224.us-east-2.compute.amazonaws.com'
 }));
 
 // app.use('/api/booking', proxy({
