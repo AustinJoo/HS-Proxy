@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const proxy = require('http-proxy-middleware');
 const axios = require('axios');
-const loaderKey = 'loaderio-65301baff974b2553c9465e56abd5190';
+const loaderKey = 'loaderio-9b819cf68f2ca338538ea376ed6c6143';
 
 const app = express();
 
