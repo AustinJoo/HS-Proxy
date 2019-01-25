@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.use((req, res, next) => {
-    console.log(req.url);
+    // console.log(req.url);
     listingID = req.url.slice(1);
     next();
 })
