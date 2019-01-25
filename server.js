@@ -22,8 +22,6 @@ app.use((req, res, next) => {
     next();
 })
 
-// app.use('/:listingID', express.static(path.join(__dirname, '/public')));
-
 // app.use('/api/items', proxy({
 //     target: ''
 // }));
