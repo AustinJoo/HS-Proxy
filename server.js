@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const proxy = require('http-proxy-middleware');
 const axios = require('axios');
+const loaderKey = '';
 
 const app = express();
 
@@ -31,6 +32,10 @@ app.use((req, res, next) => {
 //     target: 'http://localhost:5050/api/pictures'
 //     target: 'http://ec2-3-16-208-224.us-east-2.compute.amazonaws.com'
 // }));
+
+app.get(`/${loaderKey}`, (req,res) => {
+    res.send(loaderKey);
+})
 
 app.get('/:listingID', (req, res) => {
     console.log('API CAROUSEL ENDPOINT IS: ', listingID);
