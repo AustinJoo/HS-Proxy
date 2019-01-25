@@ -43,7 +43,7 @@ app.get('/:listingID', (req, res) => {
     axios.get(`http://ec2-3-16-208-224.us-east-2.compute.amazonaws.com/api/pictures/${listingID}`)
     .then((response) => {
         let data = response.data;
-        // console.log('THIS IS DATA: ', data);
+        console.log('THIS IS DATA: ', data);
         let carouselHTML = data[0];
         let carouselProps = data[1];
         let carouselCSS = data[2];
