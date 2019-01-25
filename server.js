@@ -38,7 +38,7 @@ app.get(`/${loaderKey}`, (req,res) => {
 })
 
 app.get('/:listingID', (req, res) => {
-    // console.log('API CAROUSEL ENDPOINT IS: ', listingID);
+    console.log('API CAROUSEL ENDPOINT IS: ', listingID);
     // axios.get(`http://localhost:5050/api/pictures/${listingID}`)
     axios.get(`http://ec2-3-16-208-224.us-east-2.compute.amazonaws.com/api/pictures/${listingID}`)
     .then((response) => {
