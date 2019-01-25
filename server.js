@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const proxy = require('http-proxy-middleware');
 const axios = require('axios');
-const loaderKey = '';
+const loaderKey = 'loaderio-9b819cf68f2ca338538ea376ed6c6143';
 
 const app = express();
 
@@ -62,7 +62,7 @@ app.get('/:listingID', (req, res) => {
                     <body>
                     <div id="image-carousel">${carouselHTML}</div>
                     
-                    <script src="/bundle/bundle.js"></script>
+                    <script src="http://ec2-3-16-208-224.us-east-2.compute.amazonaws.com/bundle/bundle.js"></script>
                     <script>
                         ReactDOM.hydrate(
                             React.createElement(ImageCarousel, ${JSON.stringify(carouselProps)}),
@@ -74,6 +74,9 @@ app.get('/:listingID', (req, res) => {
         )
     })
 });
+
+{/* <script src="Justin'sComponent/bundle.js"></script> */}
+{/* <script src="Alexa'sComponent/bundle.js"></script> */}
 
 // app.use('/api/booking', proxy({
 //     target: ''
