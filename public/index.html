@@ -24,23 +24,22 @@
         <div id='app'></div>
     </div>
     <!-- <script src='http://localhost:5050/bundle/bundle.js'></script> -->
-    <!-- <script src='http://ec2-3-16-208-224.us-east-2.compute.amazonaws.com/bundle/bundle.js'></script> -->
-    <!-- <script src=''></script> -->
-    <!-- <script src=""></script> -->
-    <!-- <script src=""></script> -->
+    <script src="http://ec2-3-16-208-224.us-east-2.compute.amazonaws.com/bundle/bundle.js"></script>
+    <script src="http://ec2-18-216-133-115.us-east-2.compute.amazonaws.com/dist/bundle.js"></script>
+    <script src="http://ec2-3-16-57-68.us-east-2.compute.amazonaws.com/dist/bundle.js"></script>
     <script>
         ReactDOM.render(
             React.createElement(ImageCarousel),
             document.getElementById('image-carousel')
         );
-        // ReactDOM.render(
-        //   React.createElement(BookingModule),
-        //   document.getElementById('applex')
-        // );
-        // ReactDOM.render(
-        //   React.createElement(ReviewsModule),
-        //   document.getElementById('app')
-        // );
+        ReactDOM.render(
+          React.createElement(BookingModule),
+          document.getElementById('applex')
+        );
+        ReactDOM.render(
+          React.createElement(ReviewsModule),
+          document.getElementById('app')
+        );
       </script>
 </body>
 </html>
